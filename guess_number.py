@@ -15,13 +15,13 @@ high = x
 while True:
     guess = (high + low)//2
     print('Is your secret number ' + str(guess) + ' ?')
-    a = input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.")
-    if a == 'c':
+    check = input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.")
+    if check == 'c':
         print('Game over. Your secret number was:', str(guess))
         break
-    elif a == 'l':
+    elif check == 'l':
         low = guess
-    elif a == 'h':
+    elif check == 'h':
         high = guess
     else:
         print('Sorry, I did not understand your input.')
